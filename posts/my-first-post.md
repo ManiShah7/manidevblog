@@ -2,7 +2,7 @@
 title: 'Hello, world!'
 date: '14 Nov 2020'
 img: {
-    url: '/public/img/posts/first.jpg', 
+    url: './public/img/posts/first.jpg', 
     width: 1000, 
     height: 663
 }
