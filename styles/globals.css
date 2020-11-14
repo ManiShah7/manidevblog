@@ -133,12 +133,13 @@ footer h5 {
     justify-content: center;
     color: #fff;
     background-image: url("../public/img/banner.jpg");
-    height: 300px;
+    height: 400px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
     padding-left: 20px;
+    padding-right: 20px;
 }
 
 .ms-banner::before {
