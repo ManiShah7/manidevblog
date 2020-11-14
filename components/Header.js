@@ -10,7 +10,7 @@ export default function Header() {
                         <a className="nav-logo logo">
                             Dev Blog
                             <Image
-                                src="/../public/img/header.png"
+                                src="/public/img/header.png"
                                 alt="Site Logo"
                                 width={ 24 }
                                 height={ 20 }
