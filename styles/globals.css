@@ -161,7 +161,7 @@ footer h5 {
     nav {
         text-align: left;
         display: flex;
-        align-content: center;
+        align-items: center;
         justify-content: space-between;
     }
 

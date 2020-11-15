@@ -1,13 +1,13 @@
 import Layout from '../components/Layout'
 
-const About = ( { title, description, ...props } ) => {
+const About = ({ title, description, ...props }) => {
     return (
         <>
-            <Layout pageTitle={ `${ title } | About` } description={ description }>
-                <h1 className="title">I'm a web developer, just like you.</h1>
+            <Layout pageTitle={`${title} | About`} description={description}>
+                <h1 className="title">I'm Mani, a web developer just like you.</h1>
 
                 <p className="description">
-                    { description }
+                    {description}
                 </p>
             </Layout>
         </>
