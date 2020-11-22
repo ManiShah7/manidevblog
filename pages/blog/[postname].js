@@ -10,9 +10,9 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
 
     return (
         <Layout pageTitle={`${siteTitle} | ${frontmatter.title}`}>
-            <article>
-                <h1>{frontmatter.title}</h1>
-                <p>{frontmatter.date}</p>
+            <article className="post-article">
+                <h1 className="post-title">{frontmatter.title}</h1>
+                <p className="post-date">{frontmatter.date}</p>
                 {frontmatter.img ?
                     <Image src={frontmatter.img.url} width={frontmatter.img.width} height={frontmatter.img.height} layout={frontmatter.img.layout} alt={frontmatter.title} title={frontmatter.title} /> : ''}
                 <div>
@@ -21,7 +21,7 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
             </article>
 
             <Link href="/">
-                <a className="ms-back-to-blog">Back to post list</a>
+                <a className="ms-back-to-blog">Back to home</a>
             </Link>
         </Layout>
     )
