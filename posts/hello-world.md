@@ -1,10 +1,12 @@
 ---
+id: 1,
 title: 'Hello, world!'
 date: '14 Nov 2020'
 img: {
-    url: '/img/posts/first.jpg', 
+    url: '/static/img/posts/first.jpg', 
     width: 1000, 
-    height: 663
+    height: 663,
+    layout: 'responsive'
 }
 ---
 

@@ -5,18 +5,18 @@ import Image from 'next/image'
 
 import Layout from '../../components/Layout'
 
-export default function BlogPost( { siteTitle, frontmatter, markdownBody } ) {
-    if ( !frontmatter ) return <></>
+export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
+    if (!frontmatter) return <></>
 
     return (
-        <Layout pageTitle={ `${ siteTitle } | ${ frontmatter.title }` }>
+        <Layout pageTitle={`${siteTitle} | ${frontmatter.title}`}>
             <article>
-                <h1>{ frontmatter.title }</h1>
-                <p>{ frontmatter.date }</p>
-                { frontmatter.img ?
-                    <Image src={ frontmatter.img.url } width={ frontmatter.img.width } height={ frontmatter.img.height } layout="responsive" alt={ frontmatter.title } title={frontmatter.title}/> : '' }
+                <h1>{frontmatter.title}</h1>
+                <p>{frontmatter.date}</p>
+                {frontmatter.img ?
+                    <Image src={frontmatter.img.url} width={frontmatter.img.width} height={frontmatter.img.height} layout={frontmatter.img.layout} alt={frontmatter.title} title={frontmatter.title} /> : ''}
                 <div>
-                    <ReactMarkdown source={ markdownBody }/>
+                    <ReactMarkdown source={markdownBody} />
                 </div>
             </article>
 
@@ -27,12 +27,12 @@ export default function BlogPost( { siteTitle, frontmatter, markdownBody } ) {
     )
 }
 
-export async function getStaticProps( { ...ctx } ) {
+export async function getStaticProps({ ...ctx }) {
     const { postname } = ctx.params
 
-    const content = await import(`../../posts/${ postname }.md`)
+    const content = await import(`../../posts/${postname}.md`)
     const config = await import(`../../siteconfig.json`)
-    const data = matter( content.default )
+    const data = matter(content.default)
 
     return {
         props: {
@@ -44,17 +44,17 @@ export async function getStaticProps( { ...ctx } ) {
 }
 
 export async function getStaticPaths() {
-    const blogSlugs = ( ( context ) => {
+    const blogSlugs = ((context) => {
         const keys = context.keys()
-        const data = keys.map( ( key, index ) => {
-            let slug = key.replace( /^.*[\\\/]/, '' ).slice( 0, -3 )
+        const data = keys.map((key, index) => {
+            let slug = key.replace(/^.*[\\\/]/, '').slice(0, -3)
 
             return slug
-        } )
+        })
         return data
-    } )( require.context( '../../posts', true, /\.md$/ ) )
+    })(require.context('../../posts', true, /\.md$/))
 
-    const paths = blogSlugs.map( ( slug ) => `/blog/${ slug }` )
+    const paths = blogSlugs.map((slug) => `/blog/${slug}`)
 
     return {
         paths,

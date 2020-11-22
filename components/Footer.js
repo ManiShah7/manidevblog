@@ -8,10 +8,10 @@ export default function Footer() {
             <Link href="https://github.com/ManiShahDesigns">
                 <a href="https://github.com/ManiShahDesigns" target="_blank">
                     <Image
-                        src="/img/github.png"
+                        src="/static/img/github.png"
                         alt="GitHub Link"
-                        width={ 40 }
-                        height={ 34 }
+                        width={40}
+                        height={34}
                     />
                 </a>
             </Link>

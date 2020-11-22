@@ -8,12 +8,12 @@ export default function Header() {
                 <div className="nav-logo">
                     <Link href="/">
                         <a className="nav-logo logo">
-                            Dev Blog
+                            Mani Shah
                             <Image
-                                src="/img/header.png"
+                                src="/static/img/header.png"
                                 alt="Site Logo"
-                                width={ 24 }
-                                height={ 20 }
+                                width={24}
+                                height={20}
                             />
                         </a>
                     </Link>

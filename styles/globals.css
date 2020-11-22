@@ -1,9 +1,10 @@
 /* General */
-
+/* add og */
 :root {
     --body-font: 'Ubuntu', sans-serif;
     --special-font: 'JetBrains Mono';
-    --accent: #ff9642;
+    --accent:#d35400;
+    --body-color: #2c3e50;
 }
 
 @font-face {
@@ -46,6 +47,11 @@ h5 {
     font-weight: 400;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .ms-container {
     max-width: 850px;
     padding: 0 1.5rem;
@@ -80,7 +86,23 @@ h5 {
 
 .ms-latest-posts-list li {
     margin-bottom: 15px;
-    font-size: 18px;
+    font-size: 20px;
+}
+
+.ms-latest-posts-list__link {
+    display: inline-flex;
+    align-items: center;
+}
+
+.ms-latest-posts-list li span{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.ms-latest-posts-list li .date{
+    color: #2980b9;
+    font-size: 16px;
+    margin: 0;
 }
 
 /* Nav */
@@ -132,7 +154,7 @@ footer h5 {
     flex-direction: column;
     justify-content: center;
     color: #fff;
-    background-image: url("../public/img/banner.jpg");
+    background-image: url("../public/static/img/banner.jpg");
     height: 400px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -155,6 +177,10 @@ footer h5 {
 .ms-banner .home-title,
 .ms-banner .description {
     z-index: 2;
+}
+
+.ms-latest-posts h2 {
+    color: var(--accent);   
 }
 
 @media (min-width: 550px) {
