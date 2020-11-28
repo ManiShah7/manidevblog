@@ -267,18 +267,4 @@ footer h5 {
     h1 {
         font-size: 34px;
     }
-
-    h2 {
-        font-size: 32px;
-    }
-}
-
-@media (min-width: 1200px) {
-    h1 {
-        font-size: 44px;
-    }
-
-    h2 {
-        font-size: 40px;
-    }
 }
