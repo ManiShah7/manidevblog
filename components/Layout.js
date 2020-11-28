@@ -11,6 +11,10 @@ export default function Layout({ children, pageTitle, ...props }) {
                 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet" />
                 <link rel="icon" type="image/x-icon" href="./static/favicon.ico" />
                 <title>{pageTitle}</title>
+                <meta name="description" content="Sharing code, experiences, and stories of a web developer." />
+                <meta name="robots" content="index, follow" />
+                <meta property="og:site_name" content="Mani Shah" />
+                <meta property="og:description" content="Sharing code, experiences, and stories of a web developer." />
             </Head>
             <section className="layout ms-container">
                 <Header />
