@@ -232,6 +232,16 @@ footer h5 {
     color: var(--accent);
 }
 
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-links a:not(:last-child) {
+    margin-right: 12px;
+}
+
 @media (min-width: 550px) {
     nav {
         text-align: left;
