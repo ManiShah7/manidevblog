@@ -20,6 +20,8 @@ export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
                 </div>
             </article>
 
+            <script async src="https://comments.app/js/widget.js?3" data-comments-app-website="WKaqjizT" data-limit="5" data-color="343638"></script>
+
             <Link href="/">
                 <a className="ms-back-to-blog">Back to home</a>
             </Link>
