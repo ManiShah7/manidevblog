@@ -61,7 +61,7 @@ Sometimes your boss or your graphic designer colleague wants you to add a new fe
 
 ## Last words
 
-While I have really enjoyed being a web devolper, I have been faced with some challenges, which I tried to explain this article. You may not experience the same things but being a junior web developer is an enjoyable and, sometimes, frustrating journey. You will struggle, feel stupid, learn, and at some point you, will do things that you never thought you would be able to do. 
+While I have really enjoyed being a web developer, I have been faced with some challenges, which I tried to explain in this article. You may not experience the same things but being a junior web developer is an enjoyable and, sometimes, frustrating journey. You will struggle, feel stupid, learn, and at some point you, will do things that you never thought you would be able to do. 
 
 It's an amazing process. Enjoy it!
 
