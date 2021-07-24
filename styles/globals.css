@@ -53,9 +53,13 @@ pre .language-php::before {
 }
 
 a {
-    color: #007bff;
+    color: inherit;
     text-decoration: none;
     transition: color 250ms;
+}
+
+.content a {
+    color: #007bff;
 }
 
 a:hover,
