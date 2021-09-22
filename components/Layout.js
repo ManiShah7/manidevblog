@@ -15,13 +15,13 @@ export default function Layout({ children, pageTitle, ...props }) {
                 <meta name="robots" content="index, follow" />
                 <meta property="og:site_name" content="Mani Shah" />
                 <meta property="og:description" content="Sharing code, experiences, and stories of a web developer." />
-                <script async src="https://www.googletagmanager.com/gtag/js?id=G-EBKCXCLJDK"></script>
+                <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-MRKH5MJ"></script>
                 <script dangerouslySetInnerHTML={{
                     __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-EBKCXCLJDK', { page_path: window.location.pathname });
+              gtag('config', 'GTM-MRKH5MJ', { page_path: window.location.pathname });
             `,
                 }}>
                 </script>
