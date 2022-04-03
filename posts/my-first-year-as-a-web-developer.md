@@ -38,7 +38,7 @@ They might even be natural jerks and look down on you to show they know more tha
 
 Programming is all about learning. It doesn't matter how much experience you have, there are a lot of languages and tools that you can learn.
 
-I really enjoy learning new things but sometimes I burn myself out. Sometimes I come home after a long day at work and try to work on my personal projects but my brain is literally fried and can't process anything!
+I really enjoy learning new things, but sometimes I burn myself out. Sometimes I come home after a long day at work and try to work on my personal projects but my brain is literally fried and can't process anything!
 
 Don't do this to yourself. Take a break, do something else and try to enjoy other things too (I know it's hard!).
 
