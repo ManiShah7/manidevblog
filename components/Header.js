@@ -6,26 +6,21 @@ export default function Header() {
         <header className="header">
             <nav className="nav">
                 <div className="nav-logo">
-                    <Link href="/">
-                        <a className="nav-logo logo">
-                            Mani Shah
-                            <Image
-                                src="/static/img/header.png"
-                                alt="Site Logo"
-                                width={24}
-                                height={20}
-                            />
-                        </a>
+                    <Link href="/" className="nav-logo logo">
+                        Mani Shah
+                        <Image
+                            src="/static/img/header.png"
+                            alt="Site Logo"
+                            width={24}
+                            height={20}
+                        />
                     </Link>
                 </div>
 
                 <div className="nav-menu">
-                    <Link href="/about">
-                        <a>About</a>
-                    </Link>
+                    <Link href="/about">About</Link>
                 </div>
             </nav>
         </header>
     )
 }
-
